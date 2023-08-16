@@ -12,41 +12,100 @@
 </script>
     <title>The Office</title>
     <meta charset="utf-8">
+    <style>
+        body {
+            margin:0;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom:1px solid gray;
+            margin:0;
+            padding:20px;
+        }
+        ol {
+            border-right:1px solid gray;
+            width:160px;
+            margin:0;
+            padding:20px;
+        }
+        #grid {
+            display:grid;
+            grid-template-columns: 250px 1fr;
+            
+        }
+        #grid ol {
+            padding-left:40px;
+        }
+        #grid #article {
+            padding-left:10px
+
+        }
+        @media(max-width:840px) {
+            #grid {
+            display:block;
+            }
+            ol {
+            border-right:none;
+            }
+            h1 {
+            border-bottom:none;
+            }
+        }
+
+        
+    </style>
 </head>
 
 <body>
-    <h1><a href="index.html">Recommended dramas</a></h1>
-    <ol>
-        <li><a href="1.html">Kim's Convenience</a></li>
-        <li><a href="2.html">Gossip Girl</a></li>
-        <li><a href="3.html">The Office</a></li>
-    </ol>
-    <h2>The Office</h2>
-    <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LHOtME2DL4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </p>
-    <p><a href="https://en.wikipedia.org/wiki/The_Office_(American_TV_series)" target="_blank" title="더오피스 위키피디아">The Office</a> is <strong>an American <u>mockumentary sitcom</u> television series</strong> that depicts the everyday work lives of office employees at the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company. It aired on NBC from March 24, 2005, to May 16, 2013, spanning a total of nine seasons.[1] Based on the 2001–2003 BBC series of the same name created by Ricky Gervais and Stephen Merchant, it was adapted for American television by Greg Daniels, a veteran writer for Saturday Night Live, King of the Hill, and The Simpsons. It was co-produced by Daniels' Deedle-Dee Productions and Reveille Productions (later Shine America), in association with Universal Television. The original executive producers were Daniels, Gervais, Merchant, Howard Klein, and Ben Silverman, with numerous others being promoted in later seasons. <img src="office.png" width="100%"></p>
-    <p style="margin-top:45px;">Like its British counterpart, the series was filmed in a single-camera setup without a studio audience or a laugh track to simulate the look of an actual documentary. The series debuted on NBC as a mid-season replacement and aired 201 episodes for its run. The Office originally featured Steve Carell, Rainn Wilson, John Krasinski, Jenna Fischer, and B. J. Novak as the main cast; however, the series experienced numerous changes to its ensemble cast during its run. Notable stars outside the original main cast include Ed Helms, Rashida Jones, Amy Ryan, Mindy Kaling, Craig Robinson, James Spader, Ellie Kemper, and Catherine Tate.</p>
-    <p>
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://drama-list.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </p>
+    <h1><a href="index.html" class="saw">Recommended dramas</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">Kim's Convenience</a></li>
+            <li><a href="2.html">Gossip Girl</a></li>
+            <li><a href="3.html">The Office</a></li>
+        </ol>
+        <!--
+        <h1><a href="index.html"><font color="red">Recommended dramas</font></a></h1>
+        <ol>
+            <li><a href="1.html"><font color="red">Kim's Convenience</font></a></li>
+            <li><a href="2.html"><font color="red">Gossip Girl</font></a></li>
+            <li><a href="3.html"><font color="red">The Office</font></a></li>
+        </ol>
+        -->
+        <div id="article">
+            <h2>The Office</h2>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LHOtME2DL4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </p>
+            <p><a href="https://en.wikipedia.org/wiki/The_Office_(American_TV_series)" target="_blank" title="더오피스 위키피디아">The Office</a> is <strong>an American <u>mockumentary sitcom</u> television series</strong> that depicts the everyday work lives of office employees at the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company. It aired on NBC from March 24, 2005, to May 16, 2013, spanning a total of nine seasons.[1] Based on the 2001–2003 BBC series of the same name created by Ricky Gervais and Stephen Merchant, it was adapted for American television by Greg Daniels, a veteran writer for Saturday Night Live, King of the Hill, and The Simpsons. It was co-produced by Daniels' Deedle-Dee Productions and Reveille Productions (later Shine America), in association with Universal Television. The original executive producers were Daniels, Gervais, Merchant, Howard Klein, and Ben Silverman, with numerous others being promoted in later seasons. <img src="office.png" width="100%"></p>
+            <p style="margin-top:45px;">Like its British counterpart, the series was filmed in a single-camera setup without a studio audience or a laugh track to simulate the look of an actual documentary. The series debuted on NBC as a mid-season replacement and aired 201 episodes for its run. The Office originally featured Steve Carell, Rainn Wilson, John Krasinski, Jenna Fischer, and B. J. Novak as the main cast; however, the series experienced numerous changes to its ensemble cast during its run. Notable stars outside the original main cast include Ed Helms, Rashida Jones, Amy Ryan, Mindy Kaling, Craig Robinson, James Spader, Ellie Kemper, and Catherine Tate.</p>
+            <p>
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://drama-list.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </p>
+        </div>
+    </div>
 </body>
 </html>

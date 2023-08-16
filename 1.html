@@ -12,54 +12,106 @@
 </script>
     <title>Kim's Convenience</title>
     <meta charset="utf-8">
+    <style>
+        body {
+            margin:0;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom:1px solid gray;
+            margin:0;
+            padding:20px;
+        }
+        ol {
+            border-right:1px solid gray;
+            width:160px;
+            margin:0;
+            padding:20px;
+        }
+        #grid {
+            display:grid;
+            grid-template-columns: 250px 1fr;
+            
+        }
+        #grid ol {
+            padding-left:40px;
+        }
+        #grid #article {
+            padding-left:10px
+
+        }
+        @media(max-width:840px) {
+            #grid {
+            display:block;
+            }
+            ol {
+            border-right:none;
+            }
+            h1 {
+            border-bottom:none;
+            }
+        }
+
+        
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">Recommended dramas</a></h1>
-    <ol>
-        <li><a href="1.html">Kim's Convenience</a></li>
-        <li><a href="2.html">Gossip Girl</a></li>
-        <li><a href="3.html">The Office</a></li>
-    </ol>
-    <h2>Kim's Convenience</h2>
-    <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7_BT3jdkUPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </p>
-    <p><a href="https://en.wikipedia.org/wiki/Kim%27s_Convenience" target="_blank" title="김씨네 편의점 위키피디아">Kim's Convenience</a> is <strong>a Canadian television <u>sitcom</u></strong> that aired on CBC Television from October 2016 to April 2021. It depicts the Korean Canadian Kim family that runs a convenience store in the Moss Park neighbourhood of Toronto: parents "Appa" (Paul Sun-Hyung Lee) and "Umma" (Jean Yoon) – Korean for dad and mom, respectively – along with their daughter Janet (Andrea Bang) and estranged son Jung (Simu Liu). Other characters include Jung's friend and coworker Kimchee (Andrew Phung), his manager Shannon (Nicole Power) and Janet's friend Gerald Tremblay (Ben Beauchemin). The series is based on Ins Choi's 2011 play of the same name.<img src="kims.jpg" width="100%"></p>
-    <p style="margin-top:45px;">The first season was filmed from June to August 2016 at Showline Studios in Toronto. It is produced by Thunderbird Films in conjunction with Toronto's Soulpepper Theatre Company, with Lee and Yoon reprising their roles from the play.[1] Scripts were created by Choi and Kevin White, who previously wrote for Corner Gas.</p>
-    <p>
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://drama-list.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">Kim's Convenience</a></li>
+            <li><a href="2.html" class="T">Gossip Girl</a></li>
+            <li><a href="3.html" class="T">The Office</a></li>
+        </ol>
+        <div id="article">
+            <h2>Kim's Convenience</h2>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7_BT3jdkUPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </p>
+            <p><a href="https://en.wikipedia.org/wiki/Kim%27s_Convenience" target="_blank" title="김씨네 편의점 위키피디아">Kim's Convenience</a> is <strong>a Canadian television <u>sitcom</u></strong> that aired on CBC Television from October 2016 to April 2021. It depicts the Korean Canadian Kim family that runs a convenience store in the Moss Park neighbourhood of Toronto: parents "Appa" (Paul Sun-Hyung Lee) and "Umma" (Jean Yoon) – Korean for dad and mom, respectively – along with their daughter Janet (Andrea Bang) and estranged son Jung (Simu Liu). Other characters include Jung's friend and coworker Kimchee (Andrew Phung), his manager Shannon (Nicole Power) and Janet's friend Gerald Tremblay (Ben Beauchemin). The series is based on Ins Choi's 2011 play of the same name.<img src="kims.jpg" width="100%"></p>
+            <p style="margin-top:45px;">The first season was filmed from June to August 2016 at Showline Studios in Toronto. It is produced by Thunderbird Films in conjunction with Toronto's Soulpepper Theatre Company, with Lee and Yoon reprising their roles from the play.[1] Scripts were created by Choi and Kevin White, who previously wrote for Corner Gas.</p>
+            <p>
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://drama-list.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </p>
+            <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/64d57c3c94cf5d49dc69b37c/1h7guqjv4';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
             })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </p>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/64d57c3c94cf5d49dc69b37c/1h7guqjv4';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+            </script>
+            <!--End of Tawk.to Script-->
+        </div>
+    </div>
+        
 </body>
 </html>
